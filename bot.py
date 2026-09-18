@@ -1,10 +1,13 @@
 import discord
+import asyncio
+import sys
+import os
+from asyncio import sleep
 
 from discord.ext import commands
 from discord import app_commands
 
 from dotenv import load_dotenv
-from monitor import sleep, sys, os, asyncio
 from monitor import mainListener, logger 
 
 intents = discord.Intents.default()
