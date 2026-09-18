@@ -76,11 +76,8 @@ async def on_ready():
     sync = await bot.tree.sync()
     logger.info(f"Successfully synced {len(sync)} commands!")
 
-    msg = "Bot has been started"
-    logger.info(msg)
+    logger.info("Bot has been started")
     
-
-
     await toggleListener(True)
     
 
